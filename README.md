@@ -98,6 +98,20 @@ npm run test
 ## Submission  
 Once all tests are passing and working code is pushed to the GitHub `main` branch, submit your GitHub repo through Canvas using CodeGrade.
 
+## Implementation Summary
+
+- Created a **custom hook** `useLocalStorage(key, initialValue)` to store and retrieve form data from browser `localStorage`.
+- Updated `Form.jsx` to use **controlled inputs** for `name` and `serviceNumber` fields.
+- Keys used for persistence: `"name"` and `"serviceNumber"`.
+- Values are stored as **plain strings** (no JSON serialization), matching test expectations.
+- Verified that:
+  - Form values remain after refreshing the page.
+  - All 6 tests pass via `npm run test`.
+
+### Demo Screenshot
+
+![Form persists values](screenshot.png)
+
 ## Grading Criteria  
 The application passes all test suites.
 
